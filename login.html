@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login e Cadastro - Calculadoras</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Login e Cadastro</h1>
+    <div class="form-section">
+      <h2>Login</h2>
+      <input type="email" id="login-email" placeholder="Email" required />
+      <input type="password" id="login-senha" placeholder="Senha" required />
+      <button onclick="loginUsuario(document.getElementById('login-email').value, document.getElementById('login-senha').value)">Entrar</button>
+    </div>
+    <div class="form-section">
+      <h2>Cadastro</h2>
+      <input type="email" id="cadastro-email" placeholder="Email" required />
+      <input type="password" id="cadastro-senha" placeholder="Senha" required />
+      <button onclick="registrarUsuario(document.getElementById('cadastro-email').value, document.getElementById('cadastro-senha').value)">Cadastrar</button>
+    </div>
+    <div class="form-section">
+      <button onclick="logoutUsuario()">Logout</button>
+    </div>
+  </div>
+  <script src="js/script.js"></script>
+</body>
+</html>
+    
